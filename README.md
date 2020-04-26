@@ -50,7 +50,7 @@ Inside of imports, we want to search for our function. In this case, we will sim
 
 ![IDA SEARCH](https://media.discordapp.net/attachments/669029684524351499/704104995758276668/unknown.png?width=790&height=557)
 
-Now, you should be in the idata section. Here, you want to move down one line to the extrn. Right click on it and press Jump to Xref (Cross Reference) to operand.
+Now, you should be in the idata section. Here, you want to move down one line to the extrn *(the pink)*. Right click on it and press Jump to Xref (Cross Reference) to operand.
 
 ![IDA IDATA](https://media.discordapp.net/attachments/669029684524351499/704105281696694412/unknown.png?width=790&height=557)
 
@@ -71,7 +71,9 @@ We want to select this because this is the instruction that jumps to loc_4188DA,
 
 ![IDA ASM](https://media.discordapp.net/attachments/669029684524351499/704114802967970264/unknown.png?width=1145&height=612)
 
-Now, we want to nop the instruction so that it won't jump at all. You could do other stuff instead of nop (No Operation), such as jumping to another function, but we won't do that here. Remember, you want to nop **twice** here.
+Now, we want to nop the instruction so that it won't jump at all. You could do other stuff instead of nop (No Operation), such as jumping to another function, but we won't do that here. Remember, you want to nop **twice** here. This is what it should look like:
+
+![IDA ADDOUROWN](https://media.discordapp.net/attachments/669029684524351499/704115072062062672/unknown.png)
 
 # Final step
 Congratulations! You have reversed this simple program. Now, we want to apply our changes. We want to select patch once more, only this time we want to click apply patches.
@@ -84,6 +86,6 @@ Just to be safe, create a backup if you messed up.
 
 And there you have it. Run the executable, type in some random stuff, and you should see that the message box tells you your password was correct!
 
-[!IDA YOU ARE DONE](https://media.discordapp.net/attachments/669029684524351499/704117150578901162/unknown.png)
+![IDA YOU ARE DONE](https://media.discordapp.net/attachments/669029684524351499/704117150578901162/unknown.png)
 
 This was a fairly simple tutorial. This tutorial alone wont make you a master, but I hope it got the ball rolling for your passion in reverse engineering.
