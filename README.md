@@ -75,6 +75,10 @@ Now, we want to nop the instruction so that it won't jump at all. You could do o
 
 ![IDA ADDOUROWN](https://media.discordapp.net/attachments/669029684524351499/704115072062062672/unknown.png)
 
+This should be your end result:
+
+![IDA RESULT](https://media.discordapp.net/attachments/669029684524351499/704118381049282630/unknown.png)
+
 # Final step
 Congratulations! You have reversed this simple program. Now, we want to apply our changes. We want to select patch once more, only this time we want to click apply patches.
 
