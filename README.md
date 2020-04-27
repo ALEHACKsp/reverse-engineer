@@ -22,6 +22,7 @@ void main() {
 	}
 }
 ```
+If you want to see the dissasmbly alongside the source, look at the .cpp file included.
 
 # Second step
 After you obtain IDA and your executable, open up IDA in the arch that you compiled. In this case, we'll assume you compiled in x86. Open up IDA. Click "OK" through the splash screens until you get this:
