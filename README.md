@@ -1,7 +1,7 @@
-# Reverse-engineering Basics
+# Reverse-engineering Basics: Tutorial 1
 Reverse engineering is the reproduction of another person's product following detailed examination of its construction. In this guide, you will learn the very basics of it.
 
-# First step
+## First step
 First, get IDA (Hex-Rays), located here: https://www.hex-rays.com/products/ida/. This will be the main piece of software that we use.
 Next, get the program you want to crack. If you are a beginner, keep your program simple. Example: 
 ```c++
@@ -24,7 +24,7 @@ void main() {
 ```
 If you want to see the dissasmbly alongside the source, look at the .cpp file included.
 
-# Second step
+## Second step
 After you obtain IDA and your executable, open up IDA in the arch that you compiled. In this case, we'll assume you compiled in x86. Open up IDA. Click "OK" through the splash screens until you get this:
 
 ![IDA Quick Start](https://media.discordapp.net/attachments/669029684524351499/704102284774080512/unknown.png)
@@ -42,7 +42,7 @@ If you get a message about the .pdb:
 
 Just select no. We won't need it for now.
 
-# Third step
+## Third step
 You will now be on the disassembly screen. From here, we want to go into imports.
 
 ![IDA IMPORTS](https://media.discordapp.net/attachments/669029684524351499/704104685597884567/unknown.png?width=784&height=557)
@@ -59,7 +59,7 @@ Hopefully you should have one cross reference. If you have more than one, you'll
 
 ![IDA XREF](https://media.discordapp.net/attachments/669029684524351499/704105488283074610/unknown.png?width=786&height=556)
 
-# Fourth step
+## Fourth step
 Now we are on to the actual reverse engineering. Here is what you should see:
 
 ![IDA DISASM](https://media.discordapp.net/attachments/669029684524351499/704114164855210034/unknown.png?width=476&height=541)
