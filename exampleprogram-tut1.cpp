@@ -40,5 +40,6 @@ void main() {
                 mov     esi, esp
                 push    0               ; Code
                 call    ds:__imp_exit
+                */
 	}
 }
