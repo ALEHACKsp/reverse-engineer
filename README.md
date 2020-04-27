@@ -51,7 +51,7 @@ Inside of imports, we want to search for our function. In this case, we will sim
 
 ![IDA SEARCH](https://media.discordapp.net/attachments/669029684524351499/704104995758276668/unknown.png?width=790&height=557)
 
-Now, you should be in the idata section. Here, you want to move down one line to the extrn *(the pink)*. Right click on it and press Jump to Xref (Cross Reference) to operand.
+Double click the address. Now, you should be in the idata section. Here, you want to move down one line to the extrn *(the pink)*. Right click on it and press Jump to Xref (Cross Reference) to operand.
 
 ![IDA IDATA](https://media.discordapp.net/attachments/669029684524351499/704105281696694412/unknown.png?width=790&height=557)
 
